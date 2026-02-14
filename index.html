@@ -85,7 +85,11 @@ button {
   display: none;
   margin-top: 25px;
   animation: fadeIn 1s ease forwards;
+  max-height: 50vh;
+  overflow-y: auto;
+  padding-right: 10px;
 }
+
 
 .love-message h2 {
   margin-bottom: 15px;
@@ -95,6 +99,15 @@ button {
 .love-message p {
   font-size: 1rem;
   line-height: 1.6;
+}
+
+.love-message::-webkit-scrollbar {
+  width: 6px;
+}
+
+.love-message::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
 }
 
 @keyframes fadeIn {
